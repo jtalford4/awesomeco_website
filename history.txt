@@ -1,0 +1,90 @@
+    1  git
+    2  git config --global user.name = "Joshua Talford"
+    3  cat ~/.gitconfig
+    4  git config --global user.name "Joshua Talford"
+    5  cat ~/.gitconfig
+    6  git config --global user.email "jtalford4@student.cvtc.edu"
+    7  cat ~/.gitconfig
+    8  git config --global user.name "Joshua Talford"
+    9  clear
+   10  cat ~/.gitconfig
+   11  clear
+   12  mkdir website
+   13  cd website
+   14  pwd
+   15  ls
+   16  git init
+   17  ls -alh
+   18  clear
+   19  git status
+   20  git add index.html
+   21  git status
+   22  git commit
+   23  git status
+   24  git log
+   25  git diff
+   26  git status
+   27  git add index.html
+   28  clear
+   29  git commit -m "Add first paragraph"
+   30  git add index.html
+   31  git diff
+   32  git status
+   33  git commit -m "Add second paragraph"
+   34  git status
+   35  git log
+   36  clear
+   37  git log
+   38  git log --oneline
+   39  git checkout 1556661
+   40  git checkout master
+   41  mkdir css
+   42  touch css/style.css
+   43  git status
+   44  git add css/style.css index.html
+   45  git status
+   46  git commit -m "Add stylesheet and link to home page"
+   47  git log
+   48  cd website
+   49  clear
+   50  git branch
+   51  git checkout -b about_page
+   52  git status
+   53  git add about.html
+   54  git commit -m "Add about.html"
+   55  git status
+   56  git log --oneline
+   57  clear
+   58  git checkout master
+   59  git branch
+   60  git branch about_page
+   61  git branch contact_page
+   62  git checkout contact_page
+   63  cp index.html contact.html
+   64  git add contact.html
+   65  git commit -m "Add contact.html"
+   66  git status
+   67  git log
+   68  cd website
+   69  git log --oneline
+   70  git add contact.html
+   71  git commit
+   72  git commit -m "Change title"
+   73  git checkout master
+   74  clear
+   75  git merge about_page
+   76  git checkout contact_page
+   77  clear
+   78  git merge master
+   79  clear
+   80  git checkout master
+   81  git merge contact_page
+   82  git status
+   83  clear
+   84  git branch
+   85  git branch -d about_page
+   86  git branch -d contact_page
+   87  git branch
+   88  clear
+   89  history
+   90  history > history.txt
